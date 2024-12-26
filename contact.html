@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kabadayı Games</title>
+    <title>Contact - Kabadayı Games</title>
     <style>
 :root {
     --primary-color: #5928e5ff;
@@ -154,7 +154,13 @@ footer {
     -webkit-background-clip: text; /* Metnin renk geçişini uygulamak için */
     color: transparent; /* Metnin rengini şeffaf yapar, sadece arka plan renkleri görünür */
 }
-
+.profile-picture {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 2rem;
+    }
 
     </style>
 </head>
@@ -165,51 +171,22 @@ footer {
         </div>
         <h1>Kabadayı Games</h1>
     </header>
-    
-
     <nav>
-        <a href="#about">About</a>
-        <a href="#games">Games</a>
-        <a href="contact.html">Contact</a> 
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
-    <section class="hero">
-        <h2>Welcome to Kabadayı Games</h2>
-        <p class="colorful-text">Discover immersive, story-driven experiences crafted with passion and creativity.</p>
-    </section>
+    <section class="contact-section">
+        <h2>Contact Me</h2>
+        <img src="assets/ben.jpg" alt="Your Photo" class="profile-picture"> <!-- Your image here -->
+        <p>Hi, I'm the creator of Kabadayı Games. Here's a little about me:</p>
+        <p>Passionate about game development, storytelling, and creating memorable experiences. I enjoy blending traditional folklore with modern gameplay mechanics to craft unique adventures. Feel free to reach out to me!</p>
 
-    <section id="games" class="games">
-        <div class="game-card">
-            <img src="assets/keloglan_icon.png" alt="Game 1" sizes="80px">
-            <h3>Keloglan Adventures</h3>
-            <a href="https://play.google.com/store" class="google-play-link">
-                <img src="https://storage.googleapis.com/pe-portal-consumer-prod-wagtail-static/images/visual-identity_logos_880x572.max-1920x1070.format-webp_vLPWs0y.webp?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=wagtail%40pe-portal-consumer-prod.iam.gserviceaccount.com%2F20241226%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241226T171916Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=3bf544f87ac698e7815c66fd51d22721557a33f9b2905d65c623360eacc36c2ed07dde5fb97e3d32889aa663f6b8de52f29b6e85f122fd6d51af5f0954155177a253275d55f568711d8e43adcb62346550e72f799502d8a97a5d1f8dcd3595b3375af6b4a8a69953113591c43a9bd09eaef0b651dc142945c6c76b590740bd2781046dd3b8f7f97c55902294463380370e3af4145d6b0ae98a5b9f96659fba202e23f36813d3bfa5956b3f3cda27514f7b1a1b1c3efec981e0de388ce8242078c66134398433bea2c2a2e54d7665db6c0f28db26946bf9413e7bce61a7c989e8bbac987740059a76e1c0926906bc7782e09fde769ee06431025191ded56d5106" alt="Google Play" class="google-play-logo">
-                <span>GOOGLE PLAY Link</span>
-            </a>
-            
-            <p>Join Keloglan on an Epic Journey!<br>
-                Step into the enchanting world of Keloglan, inspired by timeless Turkish folklore. Embark on a thrilling adventure filled with mysterious puzzles, legendary battles, and unique tools like the wooden slingshot and the magical saz.<br><br>
-                
-                🌟 What Awaits You:<br><br>
-                
-                <ul>
-                    <li>A captivating story-driven experience.</li>
-                    <li>Explore stunning, mystical landscapes.</li>
-                    <li>Discover and wield one-of-a-kind weapons inspired by nature.</li>
-                    <li>Solve challenging puzzles and face epic enemies.</li>
-                    <li>Uncover the secrets of a classic tale brought to life.</li>
-                </ul>
-                
-                Prepare to experience courage, wisdom, and magic in this unforgettable adventure! Download now and join the legendary journey of Keloglan!</p>
-                
+        <div class="contact-info">
+            <p><strong>Email:</strong> resulcaliskansau@gmail.com</p> <!-- Your email here -->
+            <p><strong>Linkdin:</strong> <a href="www.linkedin.com/in/resul-caliskan" target="_blank" style="color: #1DA1F2;">www.linkedin.com/in/resul-caliskan
+            </a></p> 
         </div>
-
-        <div class="game-card">
-            <img src="https://via.placeholder.com/300x200" alt="Game 2">
-            <h3>Game Title 2</h3>
-            <p>A brief description of the game.</p>
-        </div>
-
     </section>
 
     <footer>
