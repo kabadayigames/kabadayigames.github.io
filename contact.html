@@ -93,6 +93,11 @@ nav a:hover {
 .contact-info {
     font-size: 1.1rem;
     margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .contact-info a {
@@ -109,6 +114,26 @@ footer {
     padding: 1rem 2rem;
     background-color: var(--primary-color);
     color: var(--text-color);
+}
+.google-play-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: black; /* Varsayılan metin rengi */
+    gap: 0.5rem; /* Logo ve metin arasına boşluk ekler */
+}
+
+.google-play-logo {
+    width: 80px; /* Logo boyutu */
+    height: auto;
+}
+
+.google-play-link span {
+    font-size: 1.2rem;
+    background-image: linear-gradient(to right, #4285f4, #ea4335, #fbbc05, #34a853); /* Google'ın renk geçişi */
+    -webkit-background-clip: text; /* Metnin renk geçişini uygulamak için */
+    color: transparent; /* Metnin rengini şeffaf yapar, sadece arka plan renkleri görünür */
 }
 
     </style>
@@ -134,6 +159,10 @@ footer {
         <div class="contact-info">
             <p><strong>Email:</strong> <a href="mailto:resulcaliskansau@gmail.com">resulcaliskansau@gmail.com</a></p>
             <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/resul-caliskan" target="_blank">www.linkedin.com/in/resul-caliskan</a></p>
+            <p><strong>YOUTUBE:</strong> <a href="https://www.youtube.com/@Falcons_Studio" class="google-play-link">
+                <img src="assets/youtube.png" alt="youtube"  class="google-play-logo">
+                <span>kabadayigames youtube link</span>
+            </a></p>
         </div>
     </section>
 
