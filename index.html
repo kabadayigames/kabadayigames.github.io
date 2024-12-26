@@ -1,5 +1,147 @@
-<html>
-<h1>
-KABADAYI GAMES
-</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabadayı Games</title>
+    <style>
+        :root {
+            --primary-color: #5928e5ff;
+            --text-color: #ffffff;
+            --background-color: #1a1a1a;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        nav {
+            margin: 1rem 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            padding: 0.5rem 1rem;
+            border: 2px solid transparent;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            border: 2px solid var(--text-color);
+            border-radius: 5px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        .games {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .game-card {
+            background-color: #2a2a2a;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .game-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .game-card h3 {
+            margin: 1rem 0 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .game-card p {
+            font-size: 1rem;
+            color: #bbbbbb;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 2rem;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kabadayı Games</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#games">Games</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Welcome to Kabadayı Games</h2>
+        <p>Discover immersive, story-driven experiences crafted with passion and creativity.</p>
+    </section>
+
+    <section id="games" class="games">
+        <div class="game-card">
+            <img src="https://via.placeholder.com/300x200" alt="Game 1">
+            <h3>Game Title 1</h3>
+            <p>A brief description of the game.</p>
+        </div>
+
+        <div class="game-card">
+            <img src="https://via.placeholder.com/300x200" alt="Game 2">
+            <h3>Game Title 2</h3>
+            <p>A brief description of the game.</p>
+        </div>
+
+        <div class="game-card">
+            <img src="https://via.placeholder.com/300x200" alt="Game 3">
+            <h3>Game Title 3</h3>
+            <p>A brief description of the game.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kabadayı Games. All rights reserved.</p>
+    </footer>
+</body>
 </html>
