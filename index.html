@@ -36,10 +36,9 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: center; /* This centers the content horizontally */
+    justify-content: space-around; /* Logoyu ve metni aralıklı şekilde yerleştirir */
     background-color: var(--primary-color);
     padding: 1rem 2rem;
-    text-align: center;
 }
 
 
@@ -49,10 +48,15 @@ header {
 }
 
 .logo {
-    position: absolute;
-    top: -2px;
+
     width: 80px; /* Logonun boyutunu istediğiniz gibi ayarlayın */
     height: auto;
+}
+
+div[style*="width:85%"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -60,7 +64,7 @@ h1 {
     font-size: 2.5rem;
     font-weight: bold;
     color: var(--text-color);
-    flex-grow: 1; /* Başlık metni kalan alanı kaplar */
+    text-align: center;
 }
 
 header h1 {
@@ -178,7 +182,8 @@ footer {
         <div class="logo-container">
             <img src="assets/logo.png" alt="Company Logo" class="logo">
         </div>
-        <h1>Kabadayı Games</h1>
+        <div style="width:85%; justify-content:center; align-items: center;"><h1>Kabadayı Games</h1></div>
+        <div style="width: 5%;"></div>
     </header>
     
 
@@ -197,7 +202,7 @@ footer {
         <div class="game-card">
             <img src="assets/keloglan_icon.png" alt="Game 1" sizes="80px">
             <h3>Keloglan Adventures</h3>
-            <a href="https://play.google.com/store" class="google-play-link">
+            <a href="https://play.google.com/store/apps/details?id=com.kabadayigames.keloglan" class="google-play-link">
                 <img src="https://storage.googleapis.com/pe-portal-consumer-prod-wagtail-static/images/visual-identity_logos_880x572.max-1920x1070.format-webp_vLPWs0y.webp?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=wagtail%40pe-portal-consumer-prod.iam.gserviceaccount.com%2F20241226%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241226T171916Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=3bf544f87ac698e7815c66fd51d22721557a33f9b2905d65c623360eacc36c2ed07dde5fb97e3d32889aa663f6b8de52f29b6e85f122fd6d51af5f0954155177a253275d55f568711d8e43adcb62346550e72f799502d8a97a5d1f8dcd3595b3375af6b4a8a69953113591c43a9bd09eaef0b651dc142945c6c76b590740bd2781046dd3b8f7f97c55902294463380370e3af4145d6b0ae98a5b9f96659fba202e23f36813d3bfa5956b3f3cda27514f7b1a1b1c3efec981e0de388ce8242078c66134398433bea2c2a2e54d7665db6c0f28db26946bf9413e7bce61a7c989e8bbac987740059a76e1c0926906bc7782e09fde769ee06431025191ded56d5106" alt="Google Play" class="google-play-logo">
                 <span>GOOGLE PLAY Link</span>
             </a>
