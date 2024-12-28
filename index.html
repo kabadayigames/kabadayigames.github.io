@@ -20,173 +20,316 @@
     <meta name="twitter:image" content="assets/logo.png">
     <title>Kabadayı Games</title>
     <style>
-:root {
-    --primary-color: #5928e5ff;
-    --text-color: #ffffff;
-    --background-color: #1a1a1a;
-}
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('assets/cartoon.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
-}
+        :root {
+            --primary-color: #5928e5ff;
+            --text-color: #ffffff;
+            --background-color: #1a1a1a;
+            --font-family: 'CustomFont', sans-serif;
+        }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around; /* Logoyu ve metni aralıklı şekilde yerleştirir */
-    background-color: var(--primary-color);
-    padding: 1rem 2rem;
-}
+        * {
+            font-family: var(--font-family);
+        }
 
+        body {
+            margin: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
 
-.logo-container {
-    flex-shrink: 0; /* Logo boyutlandırılmasını engeller */
-    margin-right: 1rem; /* Başlık ile logonun arasına boşluk bırakır */
-}
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: var(--primary-color);
+            padding: 1rem 2rem;
+        }
 
-.logo {
+        .logo-container {
+            flex-shrink: 0;
+            margin-right: 1rem;
+        }
 
-    width: 80px; /* Logonun boyutunu istediğiniz gibi ayarlayın */
-    height: auto;
-}
+        .logo {
+            width: 70px;
+            height: auto;
+        }
 
-div[style*="width:85%"] {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        div[style*="width:85%"] {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: var(--text-color);
-    text-align: center;
-}
+        h1, h2, h3 {
+            font-family: var(--font-family);
+        }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    font-weight: bold;
-}
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--text-color);
+            text-align: center;
+        }
 
-nav {
-    margin: 1rem 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
+        /* Yeni Nav Stili */
+        nav {
+            margin: 2rem 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
 
-nav a {
-    text-decoration: none;
-    color: var(--text-color);
-    padding: 0.5rem 1rem;
-    border: 2px solid transparent;
-    transition: 0.3s;
-}
+        nav a {
+            padding: 1rem 2rem;
+            background: #4285f4;
+            border: 4px solid #2b5797;
+            border-radius: 15px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            box-shadow: 0 8px 0 #2b5797, 0 15px 20px rgba(0,0,0,.35);
+            transition: all .2s ease;
+            position: relative;
+            text-align: center;
+            outline: none;
+        }
 
-nav a:hover {
-    border: 2px solid var(--text-color);
-    border-radius: 5px;
-}
+        nav a:hover {
+            transform: translateY(2px);
+            box-shadow: 0 6px 0 #2b5797, 0 12px 17px rgba(0,0,0,.35);
+        }
 
-.hero {
-    text-align: center;
-    padding: 4rem 2rem;
-}
+        nav a:active {
+            transform: translateY(8px);
+            box-shadow: 0 0 0 #2b5797, 0 0 0 rgba(0,0,0,.35);
+        }
 
-.hero h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
+        /* Nav itemları için farklı renkler */
+        nav a:nth-child(1) {
+            background: #4285f4;
+            border-color: #2b5797;
+            box-shadow: 0 8px 0 #2b5797, 0 15px 20px rgba(0,0,0,.35);
+        }
 
-.hero p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-}
+        nav a:nth-child(2) {
+            background: #ea4335;
+            border-color: #a32e25;
+            box-shadow: 0 8px 0 #a32e25, 0 15px 20px rgba(0,0,0,.35);
+        }
 
-.games {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 sabit kolon */
-    gap: 2rem;
-    padding: 2rem;
-}
+        nav a:nth-child(3) {
+            background: #34a853;
+            border-color: #236b37;
+            box-shadow: 0 8px 0 #236b37, 0 15px 20px rgba(0,0,0,.35);
+        }
 
-.game-card {
-    background-color: #2a2a2a;
-    padding: 1rem;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
+        /* Hover efektleri için renk eşleşmeleri */
+        nav a:nth-child(1):hover {
+            box-shadow: 0 6px 0 #2b5797, 0 12px 17px rgba(0,0,0,.35);
+        }
 
-.game-card img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover; /* Resmin boyutunu sabitlemek için */
-    border-radius: 10px;
-}
+        nav a:nth-child(2):hover {
+            box-shadow: 0 6px 0 #a32e25, 0 12px 17px rgba(0,0,0,.35);
+        }
 
-.game-card h3 {
-    margin: 1rem 0 0.5rem;
-    font-size: 1.5rem;
-}
+        nav a:nth-child(3):hover {
+            box-shadow: 0 6px 0 #236b37, 0 12px 17px rgba(0,0,0,.35);
+        }
 
-.game-card p {
-    font-size: 1rem;
-    color: #bbbbbb;
-}
+        /* Active efektleri için renk eşleşmeleri */
+        nav a:nth-child(1):active {
+            box-shadow: 0 0 0 #2b5797, 0 0 0 rgba(0,0,0,.35);
+        }
 
-footer {
-    text-align: center;
-    padding: 1rem 2rem;
-    background-color: var(--primary-color);
-    color: var(--text-color);
-}
-.google-play-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    font-weight: bold;
-    color: black; /* Varsayılan metin rengi */
-    gap: 0.5rem; /* Logo ve metin arasına boşluk ekler */
-}
+        nav a:nth-child(2):active {
+            box-shadow: 0 0 0 #a32e25, 0 0 0 rgba(0,0,0,.35);
+        }
 
-.google-play-logo {
-    width: 30px; /* Logo boyutu */
-    height: auto;
-}
+        nav a:nth-child(3):active {
+            box-shadow: 0 0 0 #236b37, 0 0 0 rgba(0,0,0,.35);
+        }
 
-.google-play-link span {
-    font-size: 1.2rem;
-    background-image: linear-gradient(to right, #4285f4, #ea4335, #fbbc05, #34a853); /* Google'ın renk geçişi */
-    -webkit-background-clip: text; /* Metnin renk geçişini uygulamak için */
-    color: transparent; /* Metnin rengini şeffaf yapar, sadece arka plan renkleri görünür */
-}
-.colorful-text {
-    font-size: 1.5rem;
-    font-weight: bold;
-    background-image: linear-gradient(to right, #4285f4, #ea4335, #fbbc05, #34a853); /* Google'ın renk geçişi */
-    -webkit-background-clip: text; /* Metnin renk geçişini uygulamak için */
-    color: transparent; /* Metnin rengini şeffaf yapar, sadece arka plan renkleri görünür */
-}
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
 
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
 
+        .hero p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        .games-wrapper {
+            overflow-x: auto;
+            padding: 1rem;
+        }
+
+        .games {
+            display: flex;
+            gap: 2rem;
+            width: max-content;
+        }
+
+        .game-card {
+            background-color: #2a2a2a;
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            min-width: 280px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            border: 4px solid transparent;
+            background-image: linear-gradient(#2a2a2a, #2a2a2a), 
+                            linear-gradient(to right, #4285f4, #ea4335, #fbbc05, #34a853);
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+            transition: transform 0.3s ease;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .game-card h3 {
+            margin: 0;
+            font-size: 1.8rem;
+            background-image: linear-gradient(to right, #4285f4, #ea4335, #fbbc05, #34a853);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .game-card img.game-image {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 1rem auto;
+        }
+
+        .link-container {
+            display: flex;
+            align-items: center;
+            justify-content: first baseline;
+            gap: 0.5rem;
+            text-decoration: none;
+            padding: 0.5rem;
+            border-radius: 8px;
+            background-color: #333;
+            transition: background-color 0.3s ease;
+        }
+
+        .link-container:hover {
+            background-color: #444;
+        }
+
+        .platform-logo {
+            width: 80px;
+            height: 80px;
+        }
+
+        .link-text {
+            font-size: 1.5rem;
+            color: white;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .details-button {
+            padding: 1rem 2rem;
+            background: #4285f4;
+            border: 4px solid #2b5797;
+            border-radius: 15px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            box-shadow: 0 8px 0 #2b5797, 0 15px 20px rgba(0,0,0,.35);
+            transition: all .2s ease;
+            position: relative;
+            text-align: center;
+            outline: none;
+        }
+
+        .details-button:hover {
+            transform: translateY(2px);
+            box-shadow: 0 6px 0 #2b5797, 0 12px 17px rgba(0,0,0,.35);
+        }
+
+        .details-button:active {
+            transform: translateY(8px);
+            box-shadow: 0 0 0 #2b5797, 0 0 0 rgba(0,0,0,.35);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 2rem;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+        }
+
+        .google-play-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+            gap: 0.5rem;
+        }
+
+        .google-play-logo {
+            width: 30px;
+            height: auto;
+        }
+
+        .google-play-link span {
+            font-size: 1.2rem;
+            background-image: linear-gradient(to right, #4285f4, #ea4335, #fbbc05, #34a853);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .colorful-text {
+            font-size: 1.8rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            background-image: linear-gradient(to right, #4285f4, #ea4335, #fbbc05, #34a853);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <img src="assets/logo.png" alt="Company Logo" class="logo">
+            <img src="assets/filigran.png" alt="Company Logo" class="logo">
         </div>
         <div style="width:85%; justify-content:center; align-items: center;"><h1>Kabadayı Games</h1></div>
         <div style="width: 5%;"></div>
     </header>
     
-
     <nav>
         <a href="#about">About</a>
         <a href="#games">Games</a>
@@ -194,53 +337,40 @@ footer {
     </nav>
 
     <section class="hero">
-        <h2>Welcome to Kabadayı Games</h2>
+        <h2 style="font-family:Arial, Helvetica, sans-serif;">Welcome to Kabadayı Games</h2>
         <p class="colorful-text">Discover immersive, story-driven experiences crafted with passion and creativity.</p>
     </section>
 
-    <section id="games" class="games">
-        <div class="game-card">
-            <img src="assets/keloglan_icon.png" alt="Game 1" sizes="80px">
-            <h3>Keloglan Adventures</h3>
-            <a href="https://play.google.com/store/apps/details?id=com.kabadayigames.keloglan" class="google-play-link">
-                <img src="https://storage.googleapis.com/pe-portal-consumer-prod-wagtail-static/images/visual-identity_logos_880x572.max-1920x1070.format-webp_vLPWs0y.webp?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=wagtail%40pe-portal-consumer-prod.iam.gserviceaccount.com%2F20241226%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20241226T171916Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&X-Goog-Signature=3bf544f87ac698e7815c66fd51d22721557a33f9b2905d65c623360eacc36c2ed07dde5fb97e3d32889aa663f6b8de52f29b6e85f122fd6d51af5f0954155177a253275d55f568711d8e43adcb62346550e72f799502d8a97a5d1f8dcd3595b3375af6b4a8a69953113591c43a9bd09eaef0b651dc142945c6c76b590740bd2781046dd3b8f7f97c55902294463380370e3af4145d6b0ae98a5b9f96659fba202e23f36813d3bfa5956b3f3cda27514f7b1a1b1c3efec981e0de388ce8242078c66134398433bea2c2a2e54d7665db6c0f28db26946bf9413e7bce61a7c989e8bbac987740059a76e1c0926906bc7782e09fde769ee06431025191ded56d5106" alt="Google Play" class="google-play-logo">
-                <span>GOOGLE PLAY Link</span>
-            </a>
-            
-            <p>Join Keloglan on an Epic Journey!<br>
-                Step into the enchanting world of Keloglan, inspired by timeless Turkish folklore. Embark on a thrilling adventure filled with mysterious puzzles, legendary battles, and unique tools like the wooden slingshot and the magical saz.<br><br>
-                
-                🌟 What Awaits You:<br><br>
-                
-                <ul>
-                    <li>A captivating story-driven experience.</li>
-                    <li>Explore stunning, mystical landscapes.</li>
-                    <li>Discover and wield one-of-a-kind weapons inspired by nature.</li>
-                    <li>Solve challenging puzzles and face epic enemies.</li>
-                    <li>Uncover the secrets of a classic tale brought to life.</li>
-                </ul>
-                
-                Prepare to experience courage, wisdom, and magic in this unforgettable adventure! Download now and join the legendary journey of Keloglan!</p>
-                
-        </div>
+    <div class="games-wrapper">
+        <div class="games">
+            <div class="game-card">
+                <h3>Keloglan Adventures</h3>
+                <img src="assets/keloglan_icon.png" alt="Keloglan Adventures" class="game-image">
+                <a href="https://play.google.com/store/apps/details?id=com.kabadayigames.keloglan" class="link-container">
+                    <img src="assets/play_icon.png" alt="Google Play" class="platform-logo">
+                    <span class="link-text">GOOGLE PLAY</span>
+                </a>
+                <a href="keloglan-details.html" class="details-button">
+                    Game Details
+                </a>
+            </div>
 
-        <div class="game-card">
-            <img src="assets/kurt_bey.jpg" alt="Game 2" sizes="80px">
-            <h3>Kurt Bey</h3>
-            <a href="https://www.youtube.com/@Falcons_Studio" class="google-play-link">
-                <img src="assets/youtube.png" alt="youtube"  class="google-play-logo">
-                <span>YOUTUBE Link</span>
-            </a>
-            <p>Coming Soon 🌟 Wish me all the best</p>
-            <br><br>
-            <p>
-                It will be a work that brings together the comic book world and the game world with 2D assets in a 3D world.</p>
+            <div class="game-card">
+                <h3>Kurt Bey</h3>
+                <img src="assets/kurt_bey.jpg" alt="Kurt Bey" class="game-image">
+                <a href="https://www.youtube.com/@Falcons_Studio" class="link-container">
+                    <img src="assets/youtube.png" alt="YouTube" class="platform-logo">
+                    <span class="link-text">YOUTUBE</span>
+                </a>
+                <a href="kurt-bey-details.html" class="details-button">
+                    Game Details
+                </a>
+            </div>
         </div>
-
-    </section>
+    </div>
 
     <footer>
-        <p>&copy; 2024 Kabadayı Games. All rights reserved.</p>
+        <p style="font-family: Arial, Helvetica, sans-serif;">&copy; 2024 Kabadayı Games. All rights reserved.</p>
     </footer>
 </body>
 </html>
