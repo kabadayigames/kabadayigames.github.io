@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta name="google-adsense-account" content="ca-pub-6289983280558339">
     <meta charset="UTF-8">
@@ -10,8 +10,9 @@
     <meta name="description" content="Kabadayı Games, Tefo: Macera Başlıyor" />
     <meta
       name="keywords"
-      content="Kabadayı Games,Tefo: Macera Başlıyor"
+      content="Kabadayı Games, Tefo: Macera Başlıyor"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- Open Graph Etiketleri -->
     <meta property="og:title" content="Kabadayı Games - Tefo: Macera Başlıyor" />
@@ -25,10 +26,10 @@
 
     <!-- Twitter Card Etiketleri -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Kabadayı Games -Tefo: Macera Başlıyor" />
+    <meta name="twitter:title" content="Kabadayı Games - Tefo: Macera Başlıyor" />
     <meta
       name="twitter:description"
-      content="Tefo: Macera Başlıyor ile eğlenceye hazır olun!!"
+      content="Tefo: Macera Başlıyor ile eğlenceye hazır olun!"
     />
     <meta name="twitter:image" content="assets/logo.png" />
     <style>
@@ -93,7 +94,6 @@
             text-align: center;
         }
 
-        /* Yeni Nav Stili */
         nav {
             margin: 2rem 0;
             display: flex;
@@ -129,39 +129,6 @@
         nav a:active {
             transform: translateY(8px);
             box-shadow: 0 0 0 #2b5797, 0 0 0 rgba(0,0,0,.35);
-        }
-
-        /* Nav itemları için farklı renkler */
-        nav a:nth-child(1) {
-            background: #4285f4;
-            border-color: #2b5797;
-            box-shadow: 0 8px 0 #2b5797, 0 15px 20px rgba(0,0,0,.35);
-        }
-
-
-        nav a:nth-child(2) {
-            background: #34a853;
-            border-color: #236b37;
-            box-shadow: 0 8px 0 #236b37, 0 15px 20px rgba(0,0,0,.35);
-        }
-
-        /* Hover efektleri için renk eşleşmeleri */
-        nav a:nth-child(1):hover {
-            box-shadow: 0 6px 0 #2b5797, 0 12px 17px rgba(0,0,0,.35);
-        }
-
-
-        nav a:nth-child(2):hover {
-            box-shadow: 0 6px 0 #236b37, 0 12px 17px rgba(0,0,0,.35);
-        }
-
-        /* Active efektleri için renk eşleşmeleri */
-        nav a:nth-child(1):active {
-            box-shadow: 0 0 0 #2b5797, 0 0 0 rgba(0,0,0,.35);
-        }
-
-        nav a:nth-child(2):active {
-            box-shadow: 0 0 0 #236b37, 0 0 0 rgba(0,0,0,.35);
         }
 
         .hero {
@@ -321,109 +288,215 @@
             -webkit-background-clip: text;
             color: transparent;
         }
+
+        .contact-section {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .contact-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-section p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 2rem;
+        }
+
+        .contact-info {
+            font-size: 1.1rem;
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .contact-info a {
+            color: #1DA1F2;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 2rem;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+        }
         .contact-section {
     text-align: center;
     padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #1a1a1a;
 }
 
-.contact-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+.bio-text {
+    margin: 2rem auto;
+    max-width: 800px;
 }
 
-.contact-section p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-}
-
-.profile-picture {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
+.bio-text p {
+    font-size: 1.25rem;
+    line-height: 1.8;
     margin-bottom: 2rem;
+    color: #ffffff;
+    text-align: left;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
+                 -1px -1px 0 #5c5c5c,
+                 1px -1px 0 #5c5c5c,
+                 -1px 1px 0 #5c5c5c,
+                 1px 1px 0 #5c5c5c;
+    letter-spacing: 0.3px;
+}
+
+.bio-text p:hover {
+    opacity: 1;
+}
+
+.highlight {
+    color: #4285f4;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.intro-paragraph {
+    font-size: 1.4rem !important;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7),
+                 -1px -1px 0 #5c5c5c,
+                 1px -1px 0 #5c5c5c,
+                 -1px 1px 0 #5c5c5c,
+                 1px 1px 0 #5c5c5c !important;
+}
+
+.vision-paragraph {
+    border-left: 4px solid #4285f4;
+    padding-left: 1.5rem;
+    margin-left: 1rem;
+    background: linear-gradient(to right, rgba(92, 92, 92, 0.1), transparent);
+}
+
+.story-paragraph {
+    background: linear-gradient(to right, rgba(92, 92, 92, 0.1), transparent);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.connect-paragraph {
+    font-weight: 500;
+    text-align: center !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7),
+                 -1px -1px 0 #5c5c5c,
+                 1px -1px 0 #5c5c5c,
+                 -1px 1px 0 #5c5c5c,
+                 1px 1px 0 #5c5c5c !important;
 }
 
 .contact-info {
-    font-size: 1.1rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
     align-items: center;
-    justify-content: center;
-    gap: 1rem;
 }
 
 .contact-info a {
-    color: #1DA1F2;
-    text-decoration: none;
+    font-size: 1.25rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: rgba(66, 133, 244, 0.1);
+    width: fit-content;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .contact-info a:hover {
-    text-decoration: underline;
+    transform: translateY(-2px);
+    background-color: rgba(66, 133, 244, 0.2);
 }
 
-footer {
-    text-align: center;
-    padding: 1rem 2rem;
-    background-color: var(--primary-color);
-    color: var(--text-color);
-}
-.google-play-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    font-weight: bold;
-    color: black; /* Varsayılan metin rengi */
-    gap: 0.5rem; /* Logo ve metin arasına boşluk ekler */
+.contact-info i {
+    margin-right: 0.8rem;
 }
 
-.google-play-logo {
-    width: 80px; /* Logo boyutu */
-    height: auto;
-}
-
-.google-play-link span {
-    font-size: 1.2rem;
-    background-image: linear-gradient(to right, #4285f4, #ea4335, #fbbc05, #34a853); /* Google'ın renk geçişi */
-    -webkit-background-clip: text; /* Metnin renk geçişini uygulamak için */
-    color: transparent; /* Metnin rengini şeffaf yapar, sadece arka plan renkleri görünür */
+h2 {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7),
+                 -1px -1px 0 #5c5c5c,
+                 1px -1px 0 #5c5c5c,
+                 -1px 1px 0 #5c5c5c,
+                 1px 1px 0 #5c5c5c;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
 }
     </style>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6289983280558339"
-     crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <img src="assets/logo.png" alt="Company Logo" class="logo">
+            <img src="assets/logo.png" alt="Şirket Logosunun Görseli" class="logo">
         </div>
         <h1>Kabadayı Games</h1>
         <div style="width: 5%;"></div>
     </header>
     <nav>
-        <a href="index.html">Ana sayfa</a>
+        <a href="index.html">Ana Sayfa</a>
         <a href="contact.html">İletişim</a>
     </nav>
 
     <section class="contact-section">
         <h2>İletişime Geçin</h2>
-        <img src="assets/ben.jpg" alt="Your Photo" class="profile-picture"> <!-- Your image here -->
-        <p>Hi, I'm the creator of Kabadayı Games. Here's a little about me 🤗:</p>
-        <p>Passionate about game development, storytelling, and creating memorable experiences. I enjoy blending traditional folklore with modern gameplay mechanics to craft unique adventures. Feel free to reach out to me!</p>
-
+        <img src="assets/ben.jpg" alt="Profil Fotoğrafınız" class="profile-picture">
+        <div class="bio-text">
+            <p class="intro-paragraph">
+                Merhaba! Ben Kabadayı Games'in kurucusu ve tam zaman tek işçisi 😅. 
+                Oyun geliştirme tutkum, beni mobil, bilgisayar ve konsol oyunları yaratmaya yöneltti. 
+                Yaptığım işi seviyorum çünkü oyunlar, insanların hayal dünyasına dokunmanın en eğlenceli yolu!
+            </p>
+            
+            
+            <p class="story-paragraph">
+                Eğer benimle iletişime geçmek, projelerim hakkında fikir alışverişinde bulunmak veya 
+                sadece merhaba demek isterseniz, aşağıdaki bağlantılardan bana ulaşabilirsiniz. 
+                YouTube ve Twitch'deki yayınlarımı kaçırmamak için takip etmeyi unutmayın!
+            </p>
+        </div>
         <div class="contact-info">
-            <p><strong>Email:</strong> <a href="mailto:resulcaliskansau@gmail.com">resulcaliskansau@gmail.com</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/resul-caliskan" target="_blank">www.linkedin.com/in/resul-caliskan</a></p>
-            <p><strong>YOUTUBE:</strong> <a href="https://www.youtube.com/@Falcons_Studio" class="google-play-link">
-                <img src="assets/youtube.png" alt="youtube"  class="google-play-logo">
-                <span>kabadayigames youtube link</span>
-            </a></p>
+            <a href="resulcaliskansau@gmail.com" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-envelope"></i>
+                <span>E-posta ile iletişime geçin</span>
+            </a>
+            <a href="https://www.youtube.com/@Kabadayi_Games" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube'da Beni Takip Edin</span>
+            </a>
+            <a href="https://www.twitch.tv/kabadayigames" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitch"></i>
+                <span>Twitch'den Yayınlarımıza Katılın</span>
+            </a>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Kabadayı Games. All rights reserved.</p>
+        <p>Kabadayı Games 2025 &copy; Tüm hakları saklıdır.</p>
     </footer>
 </body>
 </html>
