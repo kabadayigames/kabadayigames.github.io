@@ -1,15 +1,115 @@
-# Gizlilik Politikası – Kelimelik
+# Privacy Policy
+**Last updated:** April 20, 2025
 
-Bu uygulama, kullanıcıların kişisel bilgilerini toplamaz, saklamaz veya paylaşmaz.
+This Privacy Policy describes our policies and procedures on the collection, use, and disclosure of your information when you use the Service and tells you about your privacy rights and how the law protects you.
 
-**Toplanan Veriler:**  
-Uygulama yalnızca kullanıcıların günlük kelime ilerlemesini, test skorlarını ve uygulama içi tercihlerini cihaz üzerinde saklar. Bu veriler üçüncü taraflarla paylaşılmaz.
+We use your personal data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this Privacy Policy.
 
-**Üçüncü Parti Servisler:**  
-Uygulama, Google Play hizmetlerini (örneğin reklam gösterimi için) kullanabilir. Bu servislerin kendi gizlilik politikaları geçerlidir.
+---
 
-**Çocuklar İçin Uygunluk:**  
-Uygulama genel kullanıma yöneliktir ve çocuklara özel veri toplamaz.
+## Interpretation and Definitions
 
-**İletişim:**  
-Herhangi bir sorunuz varsa resulcaliskansau@gmail.com üzerinden bizimle iletişime geçebilirsiniz.
+**Definitions**  
+- **Account**: A unique account created for you to access our Service.
+- **Application**: Refers to *Tefo Adventure Begins*, developed by Resul Çalışkan under *Kabadayı Games*.
+- **Company**: Referred to as “Kabadayı Games”, "we", "us", or "our" in this agreement.
+- **Country**: Turkey.
+- **Device**: Any device that can access the Service such as a smartphone or tablet.
+- **Personal Data**: Information that relates to an identified or identifiable individual.
+- **Service**: Refers to the Application (*Tefo Adventure Begins*).
+- **Service Provider**: Third-party vendors we use to help deliver our Service.
+- **Usage Data**: Data collected automatically, like IP address, device type, OS version, etc.
+- **You**: The user of the application.
+
+---
+
+## Collecting and Using Your Personal Data
+
+### Types of Data Collected
+
+**Personal Data**  
+We may ask you for information such as:
+- Email address
+
+**Usage Data**  
+Collected automatically and may include:
+- IP address
+- Device type and ID
+- Operating system
+- App usage details (page views, duration, etc.)
+
+---
+
+## How We Use Your Personal Data
+
+We may use your data to:
+- Provide and maintain the Service
+- Manage your Account
+- Contact you via email or in-app notifications
+- Provide you with updates, offers, or news
+- Analyze and improve the Service
+- Perform business transfers or partnerships
+- Comply with legal obligations
+
+---
+
+## Data Sharing
+
+We may share your data with:
+- Service Providers
+- Affiliates
+- Business partners
+- In legal circumstances (e.g. court order)
+- With your consent
+
+---
+
+## Data Retention
+
+We retain personal data only as long as necessary:
+- To fulfill our obligations
+- For analytics
+- As required by law
+
+---
+
+## Transfer of Data
+
+Your data may be stored or processed outside your country. By using our Service, you consent to this.
+
+---
+
+## Delete Your Data
+
+You may:
+- Request deletion of your data via email
+- Delete your account (if available)
+- Contact us for manual deletion at: `resulcaliskansau@gmail.com`
+
+---
+
+## Children's Privacy
+
+We do not knowingly collect information from children under 13. If we become aware, we delete such data.
+
+---
+
+## Third-Party Links
+
+Our app may link to external sites. We are not responsible for their content or privacy practices.
+
+---
+
+## Changes to This Privacy Policy
+
+We may update this page from time to time. Changes will be effective immediately upon posting.
+
+---
+
+## Contact Us
+
+If you have any questions, contact us at:  
+📧 **resulcaliskansau@gmail.com**  
+👤 **Developer**: Resul Çalışkan  
+🎮 **Game**: Tefo Adventure Begins  
+🏢 **Company**: Kabadayı Games
