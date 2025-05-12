@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Sitemap: https://kabadayigames.github.io/sitemap.xml
+
+# Özel dizinleri engelleme örneği
+# Disallow: /private/
+# Disallow: /temp/
+# Disallow: /admin/
