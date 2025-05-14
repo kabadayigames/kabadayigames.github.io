@@ -7,6 +7,7 @@ import GamePage from './GamePage';
 import AiPage from './AiPage';
 import kelimelik from './assets/kelimelik.png';
 import ContactPage from './contact';
+import PrivacyPolicy from './PirvacyPolice';
 function Home() {
   return (
     <div className="App">
@@ -73,6 +74,7 @@ function App() {
         <Route path="/oyun" element={<GamePage />} />
         <Route path="/ai" element={<AiPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
     </Router>
   );
