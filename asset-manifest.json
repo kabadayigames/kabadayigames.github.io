@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.1ad3f8d2.css",
-    "main.js": "/static/js/main.7d3ac48c.js",
+    "main.js": "/static/js/main.747a38e7.js",
     "static/media/tefo_icon.png": "/static/media/tefo_icon.c9ac5768275b40cbb7c8.png",
     "static/media/cartoon.otf": "/static/media/cartoon.5b7796be96fde40c7ff4.otf",
     "static/media/ben.jpg": "/static/media/ben.84b7c68bcc654ac2a5d4.jpg",
     "static/media/kelimelik.png": "/static/media/kelimelik.ef4f8bd5b716653c6b8e.png",
     "index.html": "/index.html",
     "main.1ad3f8d2.css.map": "/static/css/main.1ad3f8d2.css.map",
-    "main.7d3ac48c.js.map": "/static/js/main.7d3ac48c.js.map"
+    "main.747a38e7.js.map": "/static/js/main.747a38e7.js.map"
   },
   "entrypoints": [
     "static/css/main.1ad3f8d2.css",
-    "static/js/main.7d3ac48c.js"
+    "static/js/main.747a38e7.js"
   ]
 }
